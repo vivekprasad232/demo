@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1/auto;
+    background-color: black;
+    color: white;
+}
+.right-section{
+    grid-column: span 1/span 2;
+    background-color: antiquewhite;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px white;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media .icon .ico{
+    width: 100%;
+}
+.social-media .icon{
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+}
+.personal-details .icon .ico{
+    width: 6%;
+}
+.personal-details .icon{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: white;
+}
+.skill-item{
+    margin: 1rem 0;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+p,h5,h4{
+    padding-left: 0.5rem;
+    width: 100%;
+}
+.disp{
+    display: flex;
+    margin: 0.4rem 0;
+}
+.yr{
+    padding-left: 0.5rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.first-div{
+    padding-right: 0.4rem;
+    width: 80%;
+}
+.second-div{
+    padding-left: 0.4rem;
+    width: 20%;
+}
+
+@media screen and (max-width:673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right-section{
+        grid-area: auto;
+    }
+}
